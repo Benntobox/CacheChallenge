@@ -36,6 +36,28 @@ protected:
     
 };
 
+class LRUCache: Cache {
+    map<int, Node*> mp;
+    int cp;
+    Node* tail;
+    Node* head;
+    void set(int, int);
+    int get(int);
+public:
+    LRUCache(int l) { cp = l; }
+    
+};
+
+void LRUCache::set(int a, int b) {
+    
+}
+
+int LRUCache::get(int a) {
+    
+    return 0;
+}
+
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
