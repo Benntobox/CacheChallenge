@@ -48,8 +48,13 @@ public:
     
 };
 
-void LRUCache::set(int a, int b) {
-    
+void LRUCache::set(int key, int val) {
+    if (mp.find(key) != mp.end()) {
+        if (mp.size() == cp) {
+            mp[key] = val;
+            
+        }
+    }
 }
 
 int LRUCache::get(int a) {
